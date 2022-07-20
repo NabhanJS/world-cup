@@ -15,7 +15,6 @@ header{
     color: white;
     width: 80%;
     padding: 2rem 2rem 0 2rem;
-    /* margin: 0 auto; */
     border-radius: 10px;
     margin: 2rem auto 0 auto;
 }
@@ -46,26 +45,26 @@ header button{
         width: 80%;
         margin: 2rem auto 0 auto;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
+        justify-content: center;
+        column-gap: 2.5rem;
     }
     
     main i {
         color: rgb(172, 170, 170);
     }
-    
-    .main_left_side{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        background-color: black;
-        border-radius: 5px;
-    }
 
     .three_btn{
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: black;
+        border-radius: 5px;
+        height: 250px;
+        width: 200px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .three_btn button{
@@ -82,15 +81,12 @@ header button{
     .main_right_side{
         grid-column-start: 2;
         grid-column-end: 5;
-        display: flex;
+        grid-row-start: 1;
+        grid-row-end: 4;
     }
 
     .main_right_side img{
         width: 100%;
-    }
-
-    .transfer{
-        padding: 1rem;
     }
 
     .transfer button{
@@ -101,14 +97,10 @@ header button{
     
     .transfer p{
         margin: 5px;
-        
     }
     
     .blog{
-        width: 33%;
-        border: 0.3px solid rgb(178, 178, 178);
         border-radius: 5px;
-        margin: 5px;
     }
 
     .blog p{
@@ -159,4 +151,278 @@ header button{
         padding: 3rem;
     }
 /* footer css ends here */
+
+
+
+
+/* tablet screen*/
+@media screen and (max-width: 992px) {
+    body {
+        /* background-color: rgb(158, 118, 118); */
+    }
+    /* header css */
+    header{
+        /* width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white; */
+    }
+
+    .header_left_side{
+        /* width: 30%; */
+    }
+    
+    .header_left_side button{
+        /* margin-top: 1rem;
+        padding: 0.9rem 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: red;
+        color: white; */
+    }
+    
+    .header_right_side img{
+        /* width: 100%; */
+    }
+
+
+    /* main css */
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+    }
+
+    .three_btn{
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .three_btn button{
+        width: 20rem;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .red_btn{
+        background-color: red;
+        color: white;
+    }
+    
+    .blog1{
+        grid-row: 2;
+    }
+    
+    .blog2{
+        grid-row: 2;
+    }
+
+    .blog3{
+        grid-row: 3;
+    }
+    .blog4{
+        grid-row: 3;
+    }
+    .blog5{
+        grid-row: 4;
+    }
+    .blog6{
+        grid-row: 4;
+    }
+    .blog7{
+        grid-row: 5;
+    }
+    .blog8{
+        grid-row: 5;
+    }
+    .blog9{
+        grid-row: 6;
+    }
+
+    .blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .transfer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .transfer button{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 0.5px solid black;
+    }
+
+    .transfer p{
+        font-weight: bold;
+    }
+
+    .clock_chat{
+
+    }
+
+
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 20rem;
+        background-color: rgb(37, 33, 33);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    hr{
+        width: 90%;
+        border: 0.2px solid rgb(50, 48, 48);
+        margin: 1rem;
+    }
+    
+    .footer_btn{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .goal{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .footer_btn button{
+        background-color: rgb(37, 33, 33);
+        color: white;
+        margin: 0.3rem;
+        padding: 0.2rem;
+        border: none;
+    }
+  }
+
+
+  /* mobile screen */
+@media screen and (max-width: 600px) {
+
+    /* header css */
+    header{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header_left_side{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header_left_side h1{
+        font-family: 'Rubik', sans-serif;
+        width: 18rem;
+    }
+
+    .header_left_side p{
+        width: 17rem;
+    }
+
+    .header_left_side button{
+        margin: 1rem;
+        padding: 0.9rem 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: red;
+        color: white;
+    }
+
+    .header_right_side{
+        width: 80%;
+    }
+
+
+    /* main css */
+
+    main{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three_btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .transfer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10rem;
+    }
+
+
+
+    /* footer css */
+    footer{
+        width: 100%;
+        height: 27rem;
+        background-color: rgb(37, 33, 33);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    hr{
+        width: 90%;
+        border: 0.2px solid rgb(50, 48, 48);
+        margin: 1rem;
+    }
+    
+    .footer_btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer_btn button{
+        background-color: rgb(37, 33, 33);
+        color: white;
+        margin: 0.3rem;
+        padding: 0.2rem;
+        border: none;
+    }
+
+}
 
