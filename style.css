@@ -157,37 +157,7 @@ header button{
 
 /* tablet screen*/
 @media screen and (max-width: 992px) {
-    body {
-        /* background-color: rgb(158, 118, 118); */
-    }
-    /* header css */
-    header{
-        /* width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        color: white; */
-    }
-
-    .header_left_side{
-        /* width: 30%; */
-    }
-    
-    .header_left_side button{
-        /* margin-top: 1rem;
-        padding: 0.9rem 2rem;
-        border-radius: 0.5rem;
-        border: none;
-        background-color: red;
-        color: white; */
-    }
-    
-    .header_right_side img{
-        /* width: 100%; */
-    }
-
-
+   
     /* main css */
     main{
         display: grid;
@@ -206,10 +176,10 @@ header button{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        width: 30rem;
     }
 
     .three_btn button{
-        width: 20rem;
         border-radius: 5px;
         font-size: 1rem;
     }
@@ -260,7 +230,6 @@ header button{
     .transfer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
     }
@@ -275,11 +244,6 @@ header button{
     .transfer p{
         font-weight: bold;
     }
-
-    .clock_chat{
-
-    }
-
 
 
     /* footer */
@@ -366,7 +330,6 @@ header button{
 
 
     /* main css */
-
     main{
         width: 90%;
         display: flex;
@@ -378,18 +341,13 @@ header button{
     .three_btn{
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .transfer{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 10rem;
     }
-
-
 
     /* footer css */
     footer{
